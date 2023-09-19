@@ -1,0 +1,18 @@
+@use '../utils/variables';
+
+.restaurants {
+  margin-top: 54px;
+  padding-left: 17px;
+  padding-right: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  .restaurants__heading {
+    padding-bottom: 18px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+
+}

@@ -1,0 +1,30 @@
+@use '../utils/variables';
+
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 39px;
+
+  .description__heading {
+    width: 275px;
+    height: 68px;
+    color: #000;
+    text-align: center;
+    font-family: variables.$main-font;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .description__details {
+    width: 315px;
+    height: 46px;
+    color: #353535;
+    text-align: center;
+    font-family: variables.$main-font;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 27px;
+  }
+}

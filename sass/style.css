@@ -1,0 +1,368 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list],
+li {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  align-items: center;
+  appearance: none;
+  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 500;
+  height: 50px;
+  justify-content: center;
+  width: 218px;
+  margin-bottom: 57px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+}
+.card .card__img {
+  width: 346px;
+  height: 231px;
+  height: 174px;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+.card .card--badge {
+  display: none;
+}
+.card .card__presentation {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  padding: 0 25px 12px 13px;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .card__presentation .card__details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.card .card__presentation .card__details .card__name {
+  width: 267px;
+  height: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.card .card__presentation .card__details .card__location {
+  width: 247px;
+  height: 24px;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.header {
+  width: 100%;
+  height: 113px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .header__logo {
+  display: flex;
+  width: 100%;
+  height: 63px;
+  padding: 14px 89px 13px 89px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.header .header__logo .header__logo__headline {
+  color: #101010;
+  text-align: center;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  display: flex;
+  width: 197px;
+  height: 36px;
+  padding: 0px 19px 0px 16px;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__location {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  background: #eaeaea;
+}
+.header .header__location .header__location__icon {
+  width: 12px;
+  height: 16px;
+  color: #353535;
+}
+.header .header__location .header__location__name {
+  color: #353535;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.main-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 39px;
+}
+.description .description__heading {
+  width: 275px;
+  height: 68px;
+  color: #000;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.description .description__details {
+  width: 315px;
+  height: 46px;
+  color: #353535;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 27px;
+}
+
+.fonctionnement {
+  padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding-left: 20px;
+  padding-bottom: 72px;
+  background-color: #fff;
+}
+.fonctionnement .fonctionnement__heading {
+  height: 31px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.fonctionnement .fonctionnement__etape {
+  width: 322.486px;
+  height: 72.379px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: row;
+  gap: 23px;
+  align-items: center;
+}
+.fonctionnement .fonctionnement__etape .fonctionnement__etape__number {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #9356dc;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14.182px;
+  font-weight: 500;
+  transform: translate(-50%, 0%);
+}
+.fonctionnement .fonctionnement__etape .fonctionnement__etape__icon {
+  width: 13px;
+  height: 20px;
+  color: #7e7e7e;
+  display: flex;
+  align-items: center;
+}
+.fonctionnement .fonctionnement__etape .fonctionnement__etape__icon--purple {
+  color: #9356dc;
+}
+.fonctionnement .fonctionnement__etape .fonctionnement__etape__text {
+  width: 211px;
+  height: 15.67px;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.restaurants {
+  margin-top: 54px;
+  padding-left: 17px;
+  padding-right: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.restaurants .restaurants__heading {
+  padding-bottom: 18px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer {
+  margin-top: 25px;
+  background-color: #353535;
+  display: flex;
+  padding: 22px 25px;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer .footer__logo {
+  display: flex;
+  height: 27px;
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+.footer .footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+}
+.footer .footer__list .footer__list__item {
+  width: 190px;
+  height: 19px;
+}
+.footer .footer__list .footer__list__item .footer__list__item__link {
+  width: 100%;
+  color: #fff;
+}
+.footer .footer__list .footer__list__item p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer .footer__list .footer__list__item .footer__list__item__link--logo {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  gap: 11px;
+  align-items: center;
+}
+.footer .footer__list .footer__list__item .footer__list__item__link--logo .footer__list__item__icon {
+  width: 11px;
+  height: 13px;
+  color: #fff;
+  font-size: 14px;
+}
+.footer .footer__list .footer__list__item .footer__list__item__name {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=style.css.map */

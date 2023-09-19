@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@use 'utils/variables';
+
+@use 'base/animations';
+@use 'base/normalize';
+
+@use 'components/buttons';
+@use 'components/card';
+
+@use 'layout/header';
+@use 'layout/grid';
+@use 'layout/description';
+@use 'layout/fonctionnement';
+@use 'layout/restaurants';
+@use 'layout/footer';
+
+@use 'pages/home';

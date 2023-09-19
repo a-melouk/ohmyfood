@@ -1,0 +1,67 @@
+@use '../utils/variables';
+
+.footer {
+  margin-top: 25px;
+  background-color: #353535;
+  display: flex;
+  // width: 375px;
+  padding: 22px 25px;
+  flex-direction: column;
+  gap: 16px;
+
+  .footer__logo {
+    display: flex;
+    height: 27px;
+    font-family: variables.$heading-font;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 100%;
+
+    .footer__list__item {
+      width: 190px;
+      height: 19px;
+
+      .footer__list__item__link {
+        width: 100%;
+        color: #fff;
+      }
+
+      p {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .footer__list__item__link--logo {
+        width: 100%;
+        color: #fff;
+        display: flex;
+        gap: 11px;
+        align-items: center;
+
+        .footer__list__item__icon {
+          width: 11px;
+          height: 13px;
+          color: #fff;
+          font-size: 14px;
+        }
+      }
+
+
+      .footer__list__item__name {
+        color: #fff;
+        font-family: variables.$main-font;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+
+
+}

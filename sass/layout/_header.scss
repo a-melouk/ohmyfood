@@ -1,0 +1,59 @@
+@use '../utils/variables';
+
+.header {
+  width: 100%;
+  height: 113px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header__logo {
+    display: flex;
+    width: 100%;
+    height: 63px;
+    padding: 14px 89px 13px 89px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+    .header__logo__headline {
+      color: #101010;
+      text-align: center;
+      font-family: variables.$heading-font;
+      font-size: 30px;
+      font-weight: 400;
+
+      display: flex;
+      width: 197px;
+      height: 36px;
+      padding: 0px 19px 0px 16px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .header__location {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    background: #eaeaea;
+
+    .header__location__icon {
+      width: 12px;
+      height: 16px;
+      color: #353535;
+    }
+
+    .header__location__name {
+      color: #353535;
+      font-family: variables.$main-font;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+
+}

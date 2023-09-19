@@ -1,0 +1,53 @@
+@use '../utils/variables';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+
+  .card__img {
+    width: 346px;
+    height: 231px; //depuis la maquette
+    height: 174px; //après reduction de la taille
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+  }
+
+  .card--badge {
+    display: none;
+  }
+
+  .card__presentation {
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    padding: 0 25px 12px 13px;
+    justify-content: space-between;
+    align-items: center;
+
+    .card__details {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      .card__name {
+        width: 267px;
+        height: 20px;
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .card__location {
+        width: 247px;
+        height: 24px;
+        font-size: 17px;
+        font-weight: 300;
+      }
+    }
+  }
+
+
+}
