@@ -7,7 +7,7 @@
   align-items: center;
   margin-top: 39px;
 
-  .description__heading {
+  &__heading {
     width: 275px;
     height: 68px;
     color: #000;
@@ -17,7 +17,7 @@
     font-weight: 700;
   }
 
-  .description__details {
+  &__details {
     width: 315px;
     height: 46px;
     color: #353535;

@@ -51,7 +51,6 @@ label {
   line-height: 1.1;
 }
 
-/* Balance text wrapping on headings */
 a {
   text-decoration: none;
   color: #000;
@@ -118,20 +117,23 @@ button {
   flex-direction: column;
   gap: 16px;
   width: 100%;
+  height: 251px;
   background-color: #fff;
   border-radius: 15px;
+  margin-bottom: 18px;
+  overflow: hidden;
 }
-.card .card__img {
-  width: 346px;
+.card__img {
+  width: 100%;
   height: 231px;
-  height: 174px;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover;
+  margin-top: -57px;
 }
-.card .card--badge {
+.card--badge {
   display: none;
 }
-.card .card__presentation {
+.card__presentation {
   display: flex;
   flex-direction: row;
   gap: 13px;
@@ -139,22 +141,30 @@ button {
   justify-content: space-between;
   align-items: center;
 }
-.card .card__presentation .card__details {
+.card__presentation .card__details {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.card .card__presentation .card__details .card__name {
+.card__presentation .card__details .card__name {
   width: 267px;
   height: 20px;
   font-size: 18px;
   font-weight: 700;
 }
-.card .card__presentation .card__details .card__location {
+.card__presentation .card__details .card__location {
   width: 247px;
   height: 24px;
   font-size: 17px;
   font-weight: 300;
+}
+.card__presentation .card__like__btn {
+  width: 22px;
+  height: 21px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header {
@@ -164,7 +174,7 @@ button {
   flex-direction: column;
   align-items: center;
 }
-.header .header__logo {
+.header__logo {
   display: flex;
   width: 100%;
   height: 63px;
@@ -173,7 +183,7 @@ button {
   align-items: center;
   background-color: #fff;
 }
-.header .header__logo .header__logo__headline {
+.header__logo__headline {
   color: #101010;
   text-align: center;
   font-family: "Shrikhand", sans-serif;
@@ -195,12 +205,12 @@ button {
   gap: 17px;
   background: #eaeaea;
 }
-.header .header__location .header__location__icon {
+.header .header__location__icon {
   width: 12px;
   height: 16px;
   color: #353535;
 }
-.header .header__location .header__location__name {
+.header .header__location__name {
   color: #353535;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -220,7 +230,7 @@ button {
   align-items: center;
   margin-top: 39px;
 }
-.description .description__heading {
+.description__heading {
   width: 275px;
   height: 68px;
   color: #000;
@@ -229,7 +239,7 @@ button {
   font-size: 24px;
   font-weight: 700;
 }
-.description .description__details {
+.description__details {
   width: 315px;
   height: 46px;
   color: #353535;
@@ -249,12 +259,12 @@ button {
   padding-bottom: 72px;
   background-color: #fff;
 }
-.fonctionnement .fonctionnement__heading {
+.fonctionnement__heading {
   height: 31px;
   font-size: 24px;
   font-weight: 700;
 }
-.fonctionnement .fonctionnement__etape {
+.fonctionnement__etape {
   width: 322.486px;
   height: 72.379px;
   flex-shrink: 0;
@@ -265,7 +275,7 @@ button {
   gap: 23px;
   align-items: center;
 }
-.fonctionnement .fonctionnement__etape .fonctionnement__etape__number {
+.fonctionnement__etape__number {
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -278,17 +288,17 @@ button {
   font-weight: 500;
   transform: translate(-50%, 0%);
 }
-.fonctionnement .fonctionnement__etape .fonctionnement__etape__icon {
+.fonctionnement__etape__icon {
   width: 13px;
   height: 20px;
   color: #7e7e7e;
   display: flex;
   align-items: center;
 }
-.fonctionnement .fonctionnement__etape .fonctionnement__etape__icon--purple {
+.fonctionnement__etape__icon--purple {
   color: #9356dc;
 }
-.fonctionnement .fonctionnement__etape .fonctionnement__etape__text {
+.fonctionnement__etape__text {
   width: 211px;
   height: 15.67px;
   font-size: 16px;
@@ -303,12 +313,13 @@ button {
   padding-right: 18px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
 }
-.restaurants .restaurants__heading {
+.restaurants__heading {
   padding-bottom: 18px;
   font-size: 24px;
   font-weight: 700;
+  width: 275px;
+  margin-left: 3px;
 }
 
 .footer {
@@ -319,50 +330,43 @@ button {
   flex-direction: column;
   gap: 16px;
 }
-.footer .footer__logo {
+.footer__logo {
   display: flex;
   height: 27px;
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;
   color: #fff;
 }
-.footer .footer__list {
+.footer__list {
   display: flex;
   flex-direction: column;
   gap: 7px;
   width: 100%;
 }
-.footer .footer__list .footer__list__item {
+.footer__list__item {
   width: 190px;
   height: 19px;
 }
-.footer .footer__list .footer__list__item .footer__list__item__link {
+.footer__list__item__link {
   width: 100%;
   color: #fff;
 }
-.footer .footer__list .footer__list__item p {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
+.footer__list__item__link .footer__list__item__link__icon {
+  width: 12px;
+  height: 13px;
+  font-size: 24px;
 }
-.footer .footer__list .footer__list__item .footer__list__item__link--logo {
+.footer__list__item__link--logo {
   width: 100%;
   color: #fff;
   display: flex;
   gap: 11px;
   align-items: center;
 }
-.footer .footer__list .footer__list__item .footer__list__item__link--logo .footer__list__item__icon {
-  width: 11px;
-  height: 13px;
+.footer__list__item p {
   color: #fff;
-  font-size: 14px;
-}
-.footer .footer__list .footer__list__item .footer__list__item__name {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */

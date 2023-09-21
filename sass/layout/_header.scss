@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
 
-  .header__logo {
+  &__logo {
     display: flex;
     width: 100%;
     height: 63px;
@@ -16,7 +16,7 @@
     align-items: center;
     background-color: #fff;
 
-    .header__logo__headline {
+    &__headline {
       color: #101010;
       text-align: center;
       font-family: variables.$heading-font;
@@ -41,13 +41,13 @@
     gap: 17px;
     background: #eaeaea;
 
-    .header__location__icon {
+    &__icon {
       width: 12px;
       height: 16px;
       color: #353535;
     }
 
-    .header__location__name {
+    &__name {
       color: #353535;
       font-family: variables.$main-font;
       font-size: 16px;

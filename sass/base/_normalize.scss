@@ -1,13 +1,5 @@
 @use '../utils/variables';
 
-// html {
-//   box-sizing: border-box;
-// }
-
-// a {
-//   text-decoration: none;
-// }
-
 /* Box sizing rules */
 *,
 *::before,
@@ -61,20 +53,6 @@ label {
   line-height: 1.1;
 }
 
-/* Balance text wrapping on headings */
-// h1,
-// h2,
-// h3,
-// h4 {
-//   text-wrap: balance;
-// }
-
-// /* A elements that don't have a class get default styles */
-// a:not([class]) {
-//   text-decoration-skip-ink: auto;
-//   color: currentColor;
-// }
-
 a {
   text-decoration: none;
   color: #000;
@@ -117,34 +95,3 @@ ul {
   margin: 0;
   padding: 0;
 }
-
-// body,
-// h1,
-// h2,
-// h3,
-// p,
-// ul,
-// li,
-// a {
-//   margin: 0;
-//   padding: 0;
-//   color: variables.$text-color;
-// }
-
-// * {
-//   font-family: variables.$main-font;
-
-//   // overflow: hidden;
-// }
-
-// div,
-// section,
-// button,
-// span {
-//   box-sizing: border-box;
-// }
-
-
-// li {
-//   list-style: none;
-// }

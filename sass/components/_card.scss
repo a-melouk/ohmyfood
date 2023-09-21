@@ -5,22 +5,25 @@
   flex-direction: column;
   gap: 16px;
   width: 100%;
+  height: 251px;
   background-color: #fff;
   border-radius: 15px;
+  margin-bottom: 18px;
+  overflow: hidden;
 
-  .card__img {
-    width: 346px;
-    height: 231px; //depuis la maquette
-    height: 174px; //après reduction de la taille
+  &__img {
+    width: 100%;
+    height: 231px;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
+    margin-top: -57px;
   }
 
-  .card--badge {
+  &--badge {
     display: none;
   }
 
-  .card__presentation {
+  &__presentation {
     display: flex;
     flex-direction: row;
     gap: 13px;
@@ -46,6 +49,15 @@
         font-size: 17px;
         font-weight: 300;
       }
+    }
+
+    .card__like__btn {
+      width: 22px;
+      height: 21px;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 

@@ -10,13 +10,13 @@
   padding-bottom: 72px;
   background-color: #fff;
 
-  .fonctionnement__heading {
+  &__heading {
     height: 31px;
     font-size: 24px;
     font-weight: 700;
   }
 
-  .fonctionnement__etape {
+  &__etape {
     width: 322.486px;
     height: 72.379px;
     flex-shrink: 0;
@@ -27,7 +27,7 @@
     gap: 23px;
     align-items: center;
 
-    .fonctionnement__etape__number {
+    &__number {
       width: 24px;
       height: 24px;
       border-radius: 50%;
@@ -41,7 +41,7 @@
       transform: translate(-50%, 0%);
     }
 
-    .fonctionnement__etape__icon {
+    &__icon {
       width: 13px;
       height: 20px;
       color: #7e7e7e;
@@ -49,11 +49,11 @@
       align-items: center;
     }
 
-    .fonctionnement__etape__icon--purple {
+    &__icon--purple {
       color: variables.$main-color;
     }
 
-    .fonctionnement__etape__text {
+    &__text {
       width: 211px;
       height: 15.67px;
       font-size: 16px;
