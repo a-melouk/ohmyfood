@@ -2,12 +2,10 @@
 
 
 .fonctionnement {
-  padding-top: 48px;
   display: flex;
   flex-direction: column;
   gap: 26px;
-  padding-left: 20px;
-  padding-bottom: 72px;
+  padding: 48px 20px 72px 32px;
   background-color: #fff;
 
   &__heading {
@@ -17,9 +15,7 @@
   }
 
   &__etape {
-    width: 322.486px;
     height: 72.379px;
-    flex-shrink: 0;
     border-radius: 20px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     display: flex;
@@ -41,12 +37,28 @@
       transform: translate(-50%, 0%);
     }
 
-    &__icon {
+    .fonctionnement__etape__icon {
       width: 13px;
       height: 20px;
       color: #7e7e7e;
       display: flex;
-      align-items: center;
+      align-items: flex-end;
+      font-size: 18px;
+    }
+
+    .fa-mobile-screen-button {
+      width: 13.02px;
+      height: 19.9px
+    }
+
+    .fa-list-ul {
+      width: 16px;
+      height: 15.92px;
+    }
+
+    .fa-store {
+      width: 18px;
+      height: 17.91px;
     }
 
     &__icon--purple {
