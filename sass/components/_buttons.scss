@@ -1,12 +1,24 @@
 @use '../utils/variables';
 
+$gradient-before: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+$gradient-after: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+$shadow-before: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+$shadow-after: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+
+@mixin pseudo-elem {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 button {
   align-items: center;
   appearance: none;
-  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
   border-radius: 25px;
   border: none;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -16,4 +28,24 @@ button {
   justify-content: center;
   width: 218px;
   margin-bottom: 57px;
+  background: $gradient-before;
+  box-shadow: $shadow-before;
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &::after {
+    @include pseudo-elem;
+    background: $gradient-after;
+    box-shadow: $shadow-after;
+    border-radius: 25px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 500ms;
+  }
 }
