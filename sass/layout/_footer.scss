@@ -1,11 +1,12 @@
 @use '../utils/variables';
 
 .footer {
-  margin-top: 25px;
+  margin-top: 48px;
   background-color: #353535;
   display: flex;
   // width: 375px;
   padding: 22px 25px;
+  width: 100%;
   flex-direction: column;
   gap: 16px;
 

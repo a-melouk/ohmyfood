@@ -27,7 +27,7 @@ button {
   height: 50px;
   justify-content: center;
   width: 218px;
-  margin-bottom: 57px;
+  // margin-bottom: 57px;
   background: $gradient-before;
   box-shadow: $shadow-before;
   position: relative;
@@ -49,5 +49,11 @@ button {
     opacity: 0;
     z-index: -1;
     transition: opacity 500ms;
+  }
+}
+
+@media (min-width: 1024px) {
+  button {
+    margin-bottom: 0;
   }
 }
