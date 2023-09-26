@@ -146,7 +146,6 @@ button::after {
   height: 251px;
   background-color: #fff;
   border-radius: 15px;
-  margin-bottom: 18px;
   overflow: hidden;
   position: relative;
 }
@@ -180,50 +179,6 @@ button::after {
   padding: 0 25px 12px 13px;
   justify-content: space-between;
   align-items: center;
-  /*    .card__like__btn-full {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
-
-  .card__like__btn-full:hover {
-    opacity: 1;
-    background-position: 0% 100%;
-    background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-    transition: opacity 1s ease-in-out;
-  }
-
-  .fa-heart {
-    position: absolute;
-    cursor: pointer;
-    font-size: 1.2em;
-  } */
-  /*
-      position: relative;
-  z-index: 1;
-
-  &:hover {
-    cursor: pointer;
-
-    &::after {
-      opacity: 1;
-    }
-  }
-
-  &::after {
-    @include pseudo-elem;
-    background: $gradient-after;
-    box-shadow: $shadow-after;
-    border-radius: 25px;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 500ms;
-  }
-
-    */
 }
 .card__presentation .fa-heart {
   position: absolute;
@@ -339,13 +294,13 @@ button::after {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
 }
 
 @media (min-width: 1024px) {
   .main-container {
     gap: 30px;
+    align-items: center;
   }
 }
 .description {
@@ -486,6 +441,9 @@ button::after {
     gap: 24px;
     width: 100%;
   }
+  .fcnt__steps__etape {
+    width: 100%;
+  }
 }
 .restaurants {
   margin-top: 54px;
@@ -502,7 +460,25 @@ button::after {
   width: 275px;
   margin-left: 3px;
 }
+.restaurants__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
 
+@media (min-width: 1024px) {
+  .restaurants {
+    margin: 0;
+    padding: 0 180px;
+  }
+  .restaurants__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
+  }
+}
 .footer {
   margin-top: 48px;
   background-color: #353535;
@@ -515,6 +491,7 @@ button::after {
 .footer__logo {
   display: flex;
   height: 27px;
+  width: 138px;
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;
   color: #fff;
@@ -526,11 +503,14 @@ button::after {
   width: 100%;
 }
 .footer__list__item {
-  width: 190px;
   height: 19px;
+  display: flex;
+  align-items: center;
 }
 .footer__list__item__link {
-  width: 100%;
+  width: 130px;
+  display: flex;
+  align-items: center;
   color: #fff;
 }
 .footer__list__item__link .footer__list__item__link__icon {
@@ -538,7 +518,7 @@ button::after {
   height: 13px;
 }
 .footer__list__item__link--logo {
-  width: 100%;
+  width: 190px;
   color: #fff;
   display: flex;
   gap: 11px;
@@ -548,6 +528,18 @@ button::after {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    padding: 30px 25px;
+    flex-direction: row-reverse;
+  }
+  .footer__list {
+    flex-direction: row;
+    justify-content: flex-end;
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

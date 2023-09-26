@@ -13,6 +13,7 @@
   &__logo {
     display: flex;
     height: 27px;
+    width: 138px;
     font-family: variables.$heading-font;
     font-weight: 400;
     color: #fff;
@@ -25,11 +26,15 @@
     width: 100%;
 
     &__item {
-      width: 190px;
+      // width: 190px;
       height: 19px;
+      display: flex;
+      align-items: center;
 
       &__link {
-        width: 100%;
+        width: 130px;
+        display: flex;
+        align-items: center;
         color: #fff;
 
         .footer__list__item__link__icon {
@@ -38,7 +43,7 @@
         }
 
         &--logo {
-          width: 100%;
+          width: 190px;
           color: #fff;
           display: flex;
           gap: 11px;
@@ -51,6 +56,19 @@
         font-size: 16px;
         font-weight: 400;
       }
+    }
+  }
+}
+
+@media (min-width:1024px) {
+  .footer {
+    padding: 30px 25px;
+    flex-direction: row-reverse;
+
+    &__list {
+      flex-direction: row;
+      justify-content: flex-end;
+      width: auto;
     }
   }
 }

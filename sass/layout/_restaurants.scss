@@ -16,5 +16,25 @@
     margin-left: 20px - 17px;
   }
 
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+}
 
+@media (min-width:1024px) {
+  .restaurants {
+    margin: 0;
+    padding: 0 180px;
+
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 100px;
+      grid-row-gap: 50px;
+    }
+
+  }
 }

@@ -17,7 +17,7 @@
   height: 251px;
   background-color: #fff;
   border-radius: 15px;
-  margin-bottom: 18px;
+  // margin-bottom: 18px;
   overflow: hidden;
   position: relative;
 
@@ -54,51 +54,7 @@
     justify-content: space-between;
     align-items: center;
 
-    /*    .card__like__btn-full {
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
-      -webkit-text-fill-color: transparent;
-      background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-      -webkit-background-clip: text;
-      background-clip: text;
-    }
 
-    .card__like__btn-full:hover {
-      opacity: 1;
-      background-position: 0% 100%;
-      background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-      transition: opacity 1s ease-in-out;
-    }
-
-    .fa-heart {
-      position: absolute;
-      cursor: pointer;
-      font-size: 1.2em;
-    } */
-
-    /*
-      position: relative;
-  z-index: 1;
-
-  &:hover {
-    cursor: pointer;
-
-    &::after {
-      opacity: 1;
-    }
-  }
-
-  &::after {
-    @include pseudo-elem;
-    background: $gradient-after;
-    box-shadow: $shadow-after;
-    border-radius: 25px;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 500ms;
-  }
-    
-    */
 
     .fa-heart {
       position: absolute;
