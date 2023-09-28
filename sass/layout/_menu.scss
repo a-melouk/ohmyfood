@@ -18,6 +18,7 @@
     align-items: center;
     justify-content: center;
     font-size: 22px;
+    flex-basis: 30px;
   }
 
   &__logo {
@@ -26,6 +27,7 @@
     height: 36px;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 
     &__headline {
       color: #101010;
@@ -71,8 +73,14 @@
     .restaurant__card__heading {
       display: flex;
       padding: 32px 17px 0 17px;
-      width: 100%;
+      // width: 100%;
       width: 341px;
+      min-height: 29px;
+      flex-direction: row;
+      justify-content: space-between;
+      // margin-top: 32px;
+      align-items: center;
+      position: relative;
 
       &__name {
         height: 27px;
@@ -80,6 +88,13 @@
         font-weight: 400;
         color: #101010;
         font-size: 28px;
+      }
+
+      .restaurant__heart,
+      .restaurant__heart--full {
+        position: absolute;
+        bottom: 2px;
+        right: 24px;
       }
     }
 
@@ -96,6 +111,17 @@
         font-family: variables.$main-font;
         font-size: 16px;
         font-weight: 300;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &::after {
+          content: '';
+          display: block;
+          width: 40px;
+          height: 3px;
+          background: #99E2D0;
+        }
       }
 
       .card__row {
