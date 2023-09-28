@@ -8,10 +8,10 @@ $main-font: 'Roboto', sans-serif;
 $breakpoints: (
   'small': 320px,
   'medium': 768px,
-  'large': 1024px,
+  'large': 1024px
 );
 
-$gradient-before: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-$gradient-after: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+$gradient-before: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+$gradient-after: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
 $shadow-before: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 $shadow-after: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);

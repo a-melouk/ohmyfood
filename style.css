@@ -11,7 +11,7 @@ button::after {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
   border-radius: 25px;
   opacity: 0;
@@ -30,14 +30,14 @@ button::after {
   opacity: 0;
   transition: opacity 0.3s ease-out;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-image: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
 }
 
 .heart--full:hover {
   opacity: 1;
-  background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-image: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
   transition: opacity 0.3s ease-out;
 }
 
@@ -150,7 +150,7 @@ button {
   height: 50px;
   justify-content: center;
   width: 218px;
-  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   position: relative;
   z-index: 1;
@@ -188,7 +188,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--Green, #99E2D0);
+  background: var(--Green, #99e2d0);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   border-radius: 2px;
   color: #008766;
@@ -225,14 +225,6 @@ button {
   height: 24px;
   font-size: 17px;
   font-weight: 300;
-}
-.card .card__like__btn {
-  width: 22px;
-  height: 21px;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .header {
@@ -382,7 +374,6 @@ button {
 }
 .fcnt__steps__etape {
   height: 72.379px;
-  /* width: 100%; */
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   display: flex;
@@ -655,26 +646,42 @@ button {
   display: block;
   width: 40px;
   height: 3px;
-  background: #99E2D0;
+  background: #99e2d0;
 }
 .restaurant__card__content .restaurant__card__section .card__row {
-  padding: 15px;
   display: flex;
-  gap: 5px;
-  justify-content: space-between;
   width: 349px;
   height: 69px;
   border-radius: 15.043px;
   background: #fff;
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+  gap: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  align-items: center;
+}
+.restaurant__card__content .restaurant__card__section .card__row__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px;
+  min-width: 100%;
+  flex: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .restaurant__card__content .restaurant__card__section .card__row__details {
   display: flex;
-  flex-direction: column;
   gap: 5px;
-  height: 42px;
+  justify-content: space-between;
+  height: 19px;
+  align-items: flex-end;
+  width: 100%;
 }
 .restaurant__card__content .restaurant__card__section .card__row__details__name {
+  width: 100%;
   min-height: 21px;
   overflow: hidden;
   color: #000;
@@ -690,6 +697,7 @@ button {
   white-space: nowrap;
   font-size: 15.043px;
   font-weight: 300;
+  max-height: 19px;
 }
 .restaurant__card__content .restaurant__card__section .card__row__price {
   color: #353535;
@@ -697,6 +705,39 @@ button {
   font-size: 15.043px;
   font-weight: 700;
   align-self: flex-end;
+  max-height: 19px;
+}
+.restaurant__card__content .restaurant__card__section .card__row__checked {
+  width: 59px;
+  height: 69px;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99e2d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
+  transition: transform 300ms ease-in-out;
+}
+.restaurant__card__content .restaurant__card__section .card__row__checked .fa-check {
+  color: #fff;
+  --fa-border-color: #fff;
+  --fa-border-radius: 50%;
+  --fa-border-style: solid;
+  --fa-border-width: 2px;
+}
+.restaurant__card__content .restaurant__card__section .card__row:hover .card__row {
+  padding-right: 0px;
+}
+.restaurant__card__content .restaurant__card__section .card__row:hover .card__row__checked {
+  visibility: visible;
+  transform: translateX(0);
+}
+.restaurant__card__content .restaurant__card__section .card__row:hover .card__row__content {
+  padding-right: 0px;
+  min-width: 82%;
+}
+.restaurant__card__content .restaurant__card__section .card__row:hover .card__row__details__name, .restaurant__card__content .restaurant__card__section .card__row:hover .card__row__details__description {
+  width: calc(100% - 59px);
 }
 
 /*# sourceMappingURL=style.css.map */
