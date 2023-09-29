@@ -9,8 +9,12 @@ Prototype du site: https://www.figma.com/proto/t4449fzDnwGYmzuwQdu87V/Maquettes-
 Lien du projet déployé sur GitHub pages: https://a-melouk.github.io/ohmyfood/
 
 Pour utiliser ce projet:
+
 1- Télécharger/cloner le projet
+
 2- Naviguer vers le dossier sass
+
 3- Ouvrir un terminal et exécuter: sass --watch main.scss:../style.css
+
 4- Ouvrir la page index.html
 
