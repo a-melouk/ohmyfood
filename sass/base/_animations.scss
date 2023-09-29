@@ -50,3 +50,40 @@ button {
   background-image: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
   transition: opacity 0.3s ease-out;
 }
+
+.card__row {
+  &__content {
+    min-width: 100%;
+    transition: min-width 350ms ease-in-out;
+  }
+
+  &__checked {
+    width: 59px;
+    height: 69px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #99e2d0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: transform 350ms ease-in-out;
+
+    .fa-check {
+      color: #99e2d0;
+      --fa-border-color: #fff;
+      --fa-border-radius: 50%;
+      background-color: #fff;
+      font-size: 16px;
+    }
+  }
+
+  &:hover {
+    .card__row__content {
+      min-width: calc(100% - 59px);
+    }
+
+    .card__row__checked {
+      transform: translateX(0);
+    }
+  }
+}
