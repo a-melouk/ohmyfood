@@ -1,5 +1,8 @@
 @use '../utils/variables';
 
+// $card-height: 251px;
+// $image-height: $card-height - 20px;
+
 @mixin pseudo-elem {
   content: '';
   position: absolute;
@@ -14,7 +17,7 @@
   flex-direction: column;
   gap: 16px;
   width: 100%;
-  height: 251px;
+  height: variables.$small-card-height;
   background-color: #fff;
   border-radius: 15px;
   overflow: hidden;
@@ -22,7 +25,7 @@
 
   &__img {
     width: 100%;
-    height: 231px;
+    height: variables.$small-image-height;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
     margin-top: -57px;
@@ -32,7 +35,7 @@
     width: 80px;
     height: 29px;
     position: absolute;
-    bottom: 209px;
+    top: 13px;
     right: 15px;
     display: flex;
     align-items: center;

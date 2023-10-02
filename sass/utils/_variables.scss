@@ -5,11 +5,15 @@ $text-color: #000;
 $logo-font: 'Shrikhand', sans-serif;
 $heading-font: 'Shrikhand', sans-serif;
 $main-font: 'Roboto', sans-serif;
-$breakpoints: (
+$small-card-height: 251px;
+$medium-card-height: 280px;
+$small-image-height: $small-card-height - 20px;
+$medium-image-height: $medium-card-height - 20px;
+/* $breakpoints: (
   'small': 320px,
   'medium': 768px,
   'large': 1024px
-);
+); */
 
 $gradient-before: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
 $gradient-after: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);

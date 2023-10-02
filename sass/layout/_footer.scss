@@ -58,16 +58,3 @@
     }
   }
 }
-
-@media (min-width: 1024px) {
-  .footer {
-    padding: 30px 25px;
-    flex-direction: row-reverse;
-
-    &__list {
-      flex-direction: row;
-      justify-content: flex-end;
-      width: auto;
-    }
-  }
-}
