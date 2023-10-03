@@ -75,6 +75,85 @@ button::after {
   transform: translateX(0);
 }
 
+.load {
+  width: 30vh;
+  height: 22.5vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-evenly;
+}
+.load__bar {
+  background-color: #9356dc;
+  height: 100%;
+  width: 3vh;
+  animation: bars 1000ms forwards 3s ease-in-out alternate;
+}
+.load__bar--1 {
+  animation-delay: 200ms;
+}
+.load__bar--1-inv {
+  animation-delay: 200ms;
+  background-color: #ff79da;
+}
+.load__bar--2 {
+  animation-delay: 400ms;
+}
+.load__bar--2-inv {
+  animation-delay: 400ms;
+  background-color: #ff79da;
+}
+.load__bar--3 {
+  animation-delay: 600ms;
+}
+.load__bar--3-inv {
+  animation-delay: 600ms;
+  background-color: #ff79da;
+}
+.load__bar--4 {
+  animation-delay: 800ms;
+}
+.load__bar--4-inv {
+  animation-delay: 800ms;
+  background-color: #ff79da;
+}
+.load__bar--5 {
+  animation-delay: 1000ms;
+}
+.load__bar--5-inv {
+  animation-delay: 1000ms;
+  background-color: #ff79da;
+}
+
+.main-container {
+  opacity: 0;
+  visibility: hidden;
+  animation: bars-inv 1000ms forwards 2s ease-in-out alternate;
+}
+
+@keyframes bars {
+  0% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes bars-inv {
+  0% {
+    transform: scaleX(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+    visibility: visible;
+  }
+}
 /* Box sizing rules */
 *,
 *::before,

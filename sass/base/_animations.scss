@@ -40,14 +40,14 @@ button {
   opacity: 0;
   transition: opacity 0.3s ease-out;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+  background-image: variables.$gradient-before;
   background-clip: text;
   -webkit-background-clip: text;
 }
 
 .heart--full:hover {
   opacity: 1;
-  background-image: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+  background-image: variables.$gradient-before;
   transition: opacity 0.3s ease-out;
 }
 
@@ -85,5 +85,64 @@ button {
     .card__row__checked {
       transform: translateX(0);
     }
+  }
+}
+
+$size: 3vh;
+$anim-dur: 1000ms;
+$anim-delay: $anim-dur / 5;
+
+.load {
+  width: $size * 10;
+  height: $size * 7.5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-evenly;
+  &__bar {
+    background-color: variables.$main-color;
+    height: 100%;
+    width: $size;
+    animation: bars $anim-dur forwards 3s ease-in-out alternate;
+    @for $i from 1 through 5 {
+      &--#{$i} {
+        animation-delay: $anim-delay * $i;
+      }
+      &--#{$i}-inv {
+        animation-delay: $anim-delay * $i;
+        background-color: variables.$secondary-color;
+      }
+    }
+  }
+}
+
+.main-container {
+  opacity: 0;
+  visibility: hidden;
+  animation: bars-inv $anim-dur forwards 2s ease-in-out alternate;
+}
+
+@keyframes bars {
+  0% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes bars-inv {
+  0% {
+    transform: scaleX(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+    visibility: visible;
   }
 }
