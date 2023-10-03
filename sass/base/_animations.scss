@@ -118,7 +118,7 @@ $anim-delay: $anim-dur / 5;
   }
 }
 
-.main-container {
+.main-container.accueil {
   opacity: 0;
   visibility: hidden;
   height: 0px;
@@ -147,5 +147,28 @@ $anim-delay: $anim-dur / 5;
     opacity: 1;
     visibility: visible;
     height: auto;
+  }
+}
+
+$menu-delay: 1000ms;
+
+.restaurant__card__section {
+  opacity: 0;
+
+  @for $i from 1 through 3 {
+    &-#{$i} {
+      animation: menu 1s ease-in-out forwards;
+      animation-delay: $menu-delay * $i;
+    }
+  }
+}
+
+@keyframes menu {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

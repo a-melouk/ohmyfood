@@ -127,7 +127,7 @@ button::after {
   background-color: #ff79da;
 }
 
-.main-container {
+.main-container.accueil {
   opacity: 0;
   visibility: hidden;
   height: 0px;
@@ -155,6 +155,30 @@ button::after {
     opacity: 1;
     visibility: visible;
     height: auto;
+  }
+}
+.restaurant__card__section {
+  opacity: 0;
+}
+.restaurant__card__section-1 {
+  animation: menu 1s ease-in-out forwards;
+  animation-delay: 1000ms;
+}
+.restaurant__card__section-2 {
+  animation: menu 1s ease-in-out forwards;
+  animation-delay: 2000ms;
+}
+.restaurant__card__section-3 {
+  animation: menu 1s ease-in-out forwards;
+  animation-delay: 3000ms;
+}
+
+@keyframes menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 /* Box sizing rules */
