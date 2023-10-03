@@ -417,8 +417,36 @@ button {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1440px;
   margin: 0 auto;
+}
+
+.header__parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.restaurants__parent {
+  background-color: #f6f6f6;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__parent {
+  background-color: #353535;
+  width: 100%;
+  margin-top: 66px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.footer,
+.restaurants,
+.fcnt,
+.description {
+  max-width: 1440px;
 }
 
 .description {
@@ -452,7 +480,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 26px;
-  width: 100%;
   background-color: #fff;
   padding: 48px 20px 68px 20px;
 }
@@ -956,6 +983,9 @@ button {
   }
   .restaurants__cards .card__img {
     height: 231px;
+  }
+  .footer__parent {
+    height: 114px;
   }
   .footer {
     padding: 30px 25px;
