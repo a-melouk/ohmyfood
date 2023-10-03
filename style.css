@@ -129,7 +129,6 @@ button::after {
 
 .main-container.accueil {
   opacity: 0;
-  visibility: hidden;
   height: 0px;
   animation: 1500ms ease-in-out 2000ms 1 alternate forwards running bars-inv;
 }
@@ -153,7 +152,6 @@ button::after {
   100% {
     transform: scaleX(1);
     opacity: 1;
-    visibility: visible;
     height: auto;
   }
 }
@@ -577,7 +575,6 @@ button {
   width: 100%;
   flex-direction: column;
   gap: 16px;
-  margin-top: 66px;
 }
 .footer__logo {
   display: flex;

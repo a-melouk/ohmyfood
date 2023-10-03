@@ -120,7 +120,6 @@ $anim-delay: $anim-dur / 5;
 
 .main-container.accueil {
   opacity: 0;
-  visibility: hidden;
   height: 0px;
   animation: 1500ms ease-in-out 2000ms 1 alternate forwards running bars-inv;
 }
@@ -145,7 +144,6 @@ $anim-delay: $anim-dur / 5;
   100% {
     transform: scaleX(1);
     opacity: 1;
-    visibility: visible;
     height: auto;
   }
 }
