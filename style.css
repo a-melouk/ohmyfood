@@ -685,6 +685,8 @@ button {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  padding: 0px 13px;
+  width: 100%;
 }
 .restaurant__card__section__heading {
   width: 275px;
@@ -706,7 +708,6 @@ button {
 }
 .restaurant__card__section .card__row {
   display: flex;
-  width: 349px;
   height: 69px;
   border-radius: 15.043px;
   background: #fff;
