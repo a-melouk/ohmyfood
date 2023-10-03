@@ -163,7 +163,14 @@
 }
 
 @media (min-width: 1440px) {
+  .fcnt__parent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+  }
   .fcnt {
+    max-width: 1440px;
     padding: 50px 180px;
   }
 

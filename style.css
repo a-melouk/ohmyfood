@@ -131,7 +131,7 @@ button::after {
   opacity: 0;
   visibility: hidden;
   height: 0px;
-  animation: bars-inv 1000ms forwards 2s ease-in-out alternate;
+  animation: 1500ms ease-in-out 2000ms 1 alternate forwards running bars-inv;
 }
 
 @keyframes bars {
@@ -1009,7 +1009,14 @@ button {
   }
 }
 @media (min-width: 1440px) {
+  .fcnt__parent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+  }
   .fcnt {
+    max-width: 1440px;
     padding: 50px 180px;
   }
   .restaurants {

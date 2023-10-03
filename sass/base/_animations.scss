@@ -122,7 +122,7 @@ $anim-delay: $anim-dur / 5;
   opacity: 0;
   visibility: hidden;
   height: 0px;
-  animation: bars-inv $anim-dur forwards 2s ease-in-out alternate;
+  animation: 1500ms ease-in-out 2000ms 1 alternate forwards running bars-inv;
 }
 
 @keyframes bars {
