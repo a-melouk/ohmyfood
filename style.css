@@ -1,8 +1,3 @@
-/* $breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px
-); */
 button:hover {
   cursor: pointer;
 }
@@ -76,8 +71,8 @@ button::after {
 }
 
 .load {
-  width: 60vh;
-  height: 45vh;
+  width: 50vh;
+  height: 37.5vh;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -88,8 +83,8 @@ button::after {
 .load__bar {
   background-color: #9356dc;
   height: 100%;
-  width: 6vh;
-  animation: bars 1000ms forwards 3s ease-in-out alternate;
+  width: 5vh;
+  animation: bars 1000ms forwards ease-in-out alternate;
 }
 .load__bar--1 {
   animation-delay: 200ms;
@@ -131,6 +126,7 @@ button::after {
   opacity: 0;
   height: 0px;
   animation: 1500ms ease-in-out 2000ms 1 alternate forwards running loader_animation;
+  gap: 30px;
 }
 
 @keyframes bars {
@@ -152,7 +148,7 @@ button::after {
   100% {
     transform: scaleX(1);
     opacity: 1;
-    height: auto;
+    height: 100%;
   }
 }
 .restaurant__card__section {
@@ -418,33 +414,37 @@ button {
   margin: 0 auto;
 }
 
-.fcnt_parent {
+.description__parent,
+.fcnt__parent,
+.header__parent,
+.restaurants_parent,
+.restaurant__parent,
+.footer__parent {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #fff;
 }
 
-.header__parent {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.description__parent {
+  background-color: #f6f6f6;
+}
+
+.fcnt__parent {
+  background-color: #fff;
 }
 
 .restaurants_parent {
   background-color: #f6f6f6;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.restaurant__parent {
+  background-color: #fff;
 }
 
 .footer__parent {
   background-color: #353535;
-  width: 100%;
-  margin-top: 66px;
-  display: flex;
   align-items: flex-end;
-  justify-content: center;
 }
 
 .footer,
@@ -458,8 +458,9 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 39px;
-  margin-bottom: 57px;
+  margin-top: 9px;
+  margin-bottom: 27px;
+  width: 100%;
 }
 .description__heading {
   width: 275px;
@@ -555,7 +556,6 @@ button {
 }
 
 .restaurants {
-  margin-top: 54px;
   padding-left: 17px;
   padding-right: 18px;
   display: flex;
@@ -680,7 +680,6 @@ button {
 }
 .restaurant__card__content {
   position: relative;
-  top: -55px;
   background-color: #f6f6f6;
   border-radius: 50px 50px 0px 0px;
   display: flex;
@@ -794,6 +793,7 @@ button {
 }
 .restaurant__card .restaurant__commander__btn {
   width: 186px;
+  margin-bottom: 40px;
 }
 
 .footer.restaurant {
@@ -811,6 +811,7 @@ button {
 @media (min-width: 1024px) {
   .main-container.restaurant-container {
     gap: 0px;
+    background-color: #fff;
   }
   .menu__header {
     display: flex;
@@ -819,8 +820,8 @@ button {
     padding: 30px 17px 36px 17px;
     gap: 0px;
     background: #fff;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     z-index: 1;
+    max-width: 1440px;
   }
   .menu__header__logo {
     width: 200px;
@@ -830,6 +831,7 @@ button {
   }
   .restaurant__card {
     background-color: #fff;
+    max-width: 1440px;
   }
   .restaurant__card__img {
     height: 500px;
@@ -838,10 +840,9 @@ button {
   }
   .restaurant__card__content {
     position: relative;
-    margin-top: -117px;
     border-radius: 50px 50px 0px 0px;
     width: 73.3%;
-    height: 1185px;
+    margin-top: -163px;
   }
   .restaurant__card__heading {
     width: 307px;
@@ -868,7 +869,7 @@ button {
     width: 100%;
   }
   .footer.restaurant {
-    margin-top: -87px;
+    margin-top: -84px;
     z-index: 1;
   }
 }
@@ -892,6 +893,7 @@ button {
 @media (min-width: 600px) {
   .fcnt {
     align-items: center;
+    width: 100%;
   }
   .fcnt__heading {
     width: 80%;
@@ -913,6 +915,9 @@ button {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 50px;
     grid-row-gap: 25px;
+  }
+  .restaurants_parent {
+    margin-bottom: 0px;
   }
 }
 @media (min-width: 1024px) {

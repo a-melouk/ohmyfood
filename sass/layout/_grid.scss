@@ -5,38 +5,40 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  // max-width: 1440px;
   margin: 0 auto;
 }
 
-.fcnt_parent {
+.description__parent,
+.fcnt__parent,
+.header__parent,
+.restaurants_parent,
+.restaurant__parent,
+.footer__parent {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #fff;
 }
 
-.header__parent {
-  // background-color: #fff;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.description__parent {
+  background-color: #f6f6f6;
+}
+
+.fcnt__parent {
+  background-color: #fff;
 }
 
 .restaurants_parent {
   background-color: #f6f6f6;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.restaurant__parent {
+  background-color: #fff;
 }
 
 .footer__parent {
   background-color: #353535;
-  width: 100%;
-  margin-top: 66px;
-  display: flex;
   align-items: flex-end;
-  justify-content: center;
 }
 
 .footer,

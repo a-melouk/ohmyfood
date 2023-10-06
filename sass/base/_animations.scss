@@ -88,7 +88,7 @@ button {
   }
 }
 
-$size: 6vh;
+$size: 5vh;
 $anim-dur: 1000ms;
 $anim-delay: 200ms;
 
@@ -105,7 +105,7 @@ $anim-delay: 200ms;
     background-color: variables.$main-color;
     height: 100%;
     width: $size;
-    animation: bars $anim-dur forwards 3s ease-in-out alternate;
+    animation: bars $anim-dur forwards ease-in-out alternate;
     @for $i from 1 through 5 {
       &--#{$i} {
         animation-delay: $anim-delay * $i;
@@ -122,6 +122,7 @@ $anim-delay: 200ms;
   opacity: 0;
   height: 0px;
   animation: 1500ms ease-in-out 2000ms 1 alternate forwards running loader_animation;
+  gap: 30px;
 }
 
 @keyframes bars {
@@ -144,7 +145,7 @@ $anim-delay: 200ms;
   100% {
     transform: scaleX(1);
     opacity: 1;
-    height: auto;
+    height: 100%;
   }
 }
 
