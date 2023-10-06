@@ -687,6 +687,7 @@ button {
   align-items: center;
   width: 100%;
   gap: 40px;
+  margin-top: -55px;
 }
 .restaurant__card__heading {
   display: flex;
