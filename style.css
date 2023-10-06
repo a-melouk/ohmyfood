@@ -76,8 +76,8 @@ button::after {
 }
 
 .load {
-  width: 30vh;
-  height: 22.5vh;
+  width: 60vh;
+  height: 45vh;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -88,7 +88,7 @@ button::after {
 .load__bar {
   background-color: #9356dc;
   height: 100%;
-  width: 3vh;
+  width: 6vh;
   animation: bars 1000ms forwards 3s ease-in-out alternate;
 }
 .load__bar--1 {
@@ -130,7 +130,7 @@ button::after {
 .main-container.accueil {
   opacity: 0;
   height: 0px;
-  animation: 1500ms ease-in-out 2000ms 1 alternate forwards running bars-inv;
+  animation: 1500ms ease-in-out 2000ms 1 alternate forwards running loader_animation;
 }
 
 @keyframes bars {
@@ -143,7 +143,7 @@ button::after {
     visibility: hidden;
   }
 }
-@keyframes bars-inv {
+@keyframes loader_animation {
   0% {
     transform: scaleX(0.5);
     opacity: 0;
@@ -418,13 +418,20 @@ button {
   margin: 0 auto;
 }
 
+.fcnt_parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
 .header__parent {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.restaurants__parent {
+.restaurants_parent {
   background-color: #f6f6f6;
   width: 100%;
   display: flex;

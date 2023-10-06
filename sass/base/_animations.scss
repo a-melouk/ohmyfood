@@ -88,9 +88,9 @@ button {
   }
 }
 
-$size: 3vh;
+$size: 6vh;
 $anim-dur: 1000ms;
-$anim-delay: $anim-dur / 5;
+$anim-delay: 200ms;
 
 .load {
   width: $size * 10;
@@ -121,7 +121,7 @@ $anim-delay: $anim-dur / 5;
 .main-container.accueil {
   opacity: 0;
   height: 0px;
-  animation: 1500ms ease-in-out 2000ms 1 alternate forwards running bars-inv;
+  animation: 1500ms ease-in-out 2000ms 1 alternate forwards running loader_animation;
 }
 
 @keyframes bars {
@@ -135,7 +135,7 @@ $anim-delay: $anim-dur / 5;
   }
 }
 
-@keyframes bars-inv {
+@keyframes loader_animation {
   0% {
     transform: scaleX(0.5);
     opacity: 0;

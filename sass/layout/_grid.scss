@@ -9,6 +9,13 @@
   margin: 0 auto;
 }
 
+.fcnt_parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
 .header__parent {
   // background-color: #fff;
   width: 100%;
@@ -16,7 +23,7 @@
   justify-content: center;
 }
 
-.restaurants__parent {
+.restaurants_parent {
   background-color: #f6f6f6;
   width: 100%;
   display: flex;
