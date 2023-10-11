@@ -507,6 +507,9 @@ button {
   background-color: #f6f6f6;
   gap: 14px;
 }
+.fcnt__steps__etape:hover .fcnt__steps__etape__icon {
+  color: #9356dc;
+}
 .fcnt__steps__etape__num {
   width: 24px;
   height: 24px;
@@ -539,7 +542,6 @@ button {
 .fcnt__steps__etape .fa-store {
   width: 18px;
   height: 17.91px;
-  color: #9356dc;
 }
 .fcnt__steps__etape__text {
   width: 211px;

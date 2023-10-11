@@ -31,6 +31,12 @@
       background-color: #f6f6f6;
       gap: 14px;
 
+      &:hover {
+        .fcnt__steps__etape__icon {
+          color: #9356dc;
+        }
+      }
+
       &__num {
         width: 24px;
         height: 24px;
@@ -67,7 +73,7 @@
       .fa-store {
         width: 18px;
         height: 17.91px;
-        color: #9356dc;
+        // color: #9356dc;
       }
 
       &__text {
