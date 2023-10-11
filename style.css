@@ -141,14 +141,10 @@ button::after {
 }
 @keyframes loader_animation {
   0% {
-    transform: scaleX(0.5);
     opacity: 0;
-    height: 0px;
   }
   100% {
-    transform: scaleX(1);
     opacity: 1;
-    height: 100%;
   }
 }
 .restaurant__card__section {
